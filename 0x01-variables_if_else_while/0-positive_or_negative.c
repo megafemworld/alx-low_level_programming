@@ -1,8 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
- * find wether Number is Positive/negative/zero
+/**
+ * main - Entry point
+ * Description: find wether Number is Positive/negative/zero
+ * Param: Random Number
+ *Return: Always 0 (success)
  */
 
 int main(void)
