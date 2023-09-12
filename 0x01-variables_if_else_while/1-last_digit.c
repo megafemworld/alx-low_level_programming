@@ -6,7 +6,7 @@
  * description: find the last digit of number
  * random number generator
  * param: Random number
- * return: always 0 on success
+ * Return: always 0 on success
  */
 int main(void)
 {
