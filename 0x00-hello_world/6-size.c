@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * description: Print sizeof 
- * using printf and sizeof fns
+ * description: Print sizeof using printf and sizeof fns
  * Return: return 0 always on success
  */
 int main(void)
