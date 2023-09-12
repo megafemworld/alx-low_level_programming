@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- * main: Entry point
+ * main - Entry point
  * description: Print using printf fns
+ * print the input text followed by new line
  * Return: return (0) on success
  */
 
