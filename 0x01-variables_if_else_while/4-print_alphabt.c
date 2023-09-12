@@ -5,10 +5,10 @@
  * except e and q
  * Return: 0 on success
  */
-int main (void)
+int main(void)
 {
 	char lower = 'a';
-	while(lower <= 'z')
+	while (lower <= 'z')
 	{
 		putchar(lower);
 		lower++;
