@@ -3,7 +3,7 @@
   * Description: check if it's small letter
   * Return: 1 if lowercase and 0 if otherwise
   */
-int _lower(int c)
+int _islower(int c)
 {
 	int lowercase = 97;
 	int letter = c;
