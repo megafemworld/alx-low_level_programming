@@ -2,7 +2,7 @@
 /**
   * is_lower - check for lowercase
   * description: _islower check if it's small letter
-Param: 
+  * Param: letter to be compare
   * Return: 1 if lowercase and 0 if otherwise
   */
 int _islower(int c)
@@ -21,5 +21,4 @@ int _islower(int c)
 			return (0);
 		}
 	}
-	return (0);
 }
