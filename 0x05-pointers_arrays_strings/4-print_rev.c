@@ -17,10 +17,10 @@ void print_rev(char *s)
 	}
 	while (i >= 0)
 	{
+		_putchar(*(s + i));
 		if (i == 0)
-			_putchar('*p\n');
+			_putchar('\n');
 		else
-			_putchar(*(s + i));
-		i--;
+			i--;
 	}
 }
