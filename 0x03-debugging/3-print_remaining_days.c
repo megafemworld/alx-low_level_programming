@@ -24,17 +24,19 @@ void print_remaining_days(int month, int day, int year)
 	}
 	else
 	{
-		if ((month >= 1 || month <= 12)  && (day >= 1 || day < 31)
+		if ((month == 2 && day >= 60) || (month == 3 && day > 90) || 
+			(month == 4 && day > 120) || (month == 5 && day > 151) ||
+			(month == 6 && day > 181) || (month == 7 && day > 212) ||
+			(month == 8 && day > 243) || (month == 9 && day > 273) ||
+			(month == 10 && day > 304) || (month == 11 && day > 334) ||
+			(month == 12 && day > 365))
+		{
+			printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year);
+		}
+		else
 		{
 			printf("Day of the year: %d\n", day);
 			printf("Remaining days: %d\n", 365 - day);
 		}
-		else
-		{
-			printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year);
-		}
-
 	}
-	
-	return (0);
 }
