@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * _puts - print string 
+  * _puts - print string
   * follow by new line
   * @str: string to printed
   * Return: 0 Always
