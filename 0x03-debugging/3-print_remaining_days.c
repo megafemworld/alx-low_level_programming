@@ -24,7 +24,7 @@ void print_remaining_days(int month, int day, int year)
 	}
 	else
 	{
-		if ((month == 2 && day >= 60) || (month == 3 && day > 90) ||
+		if ((month == 2 && day > 60) || (month == 3 && day > 90) ||
 				(month == 4 && day > 120) || (month == 5 && day > 151) ||
 				(month == 6 && day > 181) || (month == 7 && day > 212) ||
 				(month == 8 && day > 243) || (month == 9 && day > 273) ||
