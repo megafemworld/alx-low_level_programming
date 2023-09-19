@@ -20,4 +20,3 @@ void rev_string(char *s) {
         s[length - 1 - i] = temp;
     }
 }
-i
