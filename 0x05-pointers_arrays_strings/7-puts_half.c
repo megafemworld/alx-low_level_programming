@@ -10,7 +10,6 @@ void puts_half(char *str)
 	int i = 0;
 	int length_of_the_string = 0;
 	int n;
-	int j;
 
 	while (*(str + i) != '\0')
 	{
