@@ -3,6 +3,7 @@
  * _strncpy - copy string in nth time
  * @dest: destination of the character
  * @src: string source to be copied
+ * @n: number of characters to copy
  * Return: dest 
  */
 char *_strncpy(char *dest, char *src, int n)
@@ -21,7 +22,9 @@ char *_strncpy(char *dest, char *src, int n)
 			dest[i] = '\0';
 		}
 		else
+		{
 			dest[i] = src[i];
+		}
 	}
 	return (dest);
 }
