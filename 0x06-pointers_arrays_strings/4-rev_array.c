@@ -7,13 +7,11 @@
   */
 void reverse_array(int *a, int n)
 {
-	int counter = sizeof(a)/sizeof(a[0]);
-	counter = counter - 1;
-	int i = 0;
+	int i = 0
 
 	while (i <  n)
 	{
-		tmp[i] = a[counter];
+		a[
 		i++;
 		counter--;
 	}
