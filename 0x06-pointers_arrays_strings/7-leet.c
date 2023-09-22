@@ -7,11 +7,21 @@
 char *leet(char *s)
 {
 	int i = 0;
+	int check;
+	char lower[] = {'a', 'e', 'o', 't', 'l'};
+	char upper[] = {'A', 'E', 'O', 'T', 'L'};
+	int num[] = {4, 3, 0, 7, 1};
 
 	while (s[i] != '\0')
 	{
-		if (s[i] == a || s[i] == A || s[i] == e || s[i] == E || s[i] == o || s[i] == o ||
-				s[i] == t || s[i] == T || s[i] == l || s[i] == L)
-
+		for (check = 0; check < 5; check++)
+		{
+			if (s[i] == lower[check] || s[i] == upper[check])
+			{
+				s[i] = num[check];
+				break;
+			}
+		}
 	}
+	return (s);
 }
