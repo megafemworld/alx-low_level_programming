@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * _strspn - get the length of a prexfix substring
- * @s: string to be scannee
- * @accept: string of characters to match
+ * _strspn - get the length of a prexfix substring.
+ * @s: string to be scanned.
+ * @accept: string of characters to match.
+ *
  * Return: number of btye from s in accept.
  */
 unsigned int _strspn(char *s, char *accept)
