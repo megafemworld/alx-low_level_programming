@@ -2,29 +2,26 @@
 #include "main.h"
 
 /**
-  * _strchr - locate a character in a string
-  * @s: string to search through
-  * @c: character to search for
-  * 
-  * Return: pointer or Null
-  */
+ * _strchr - locates a character in a string.
+ * @s: Haystack
+ * @c: Needle
+ *
+ * Return: pointer to position of c
+ */
 char *_strchr(char *s, char c)
 {
+	unsigned int i;
 	char *p = NULL;
-	unsigned int i = 0;
 
-	while (s[i] != '\0')
+	for (i = 0; s[i]; i++)
 	{
 		if (s[i] == c)
 		{
 			p = (s + i);
 			break;
 		}
-		i++
 	}
-	if (s[i] == '\0' && c == '\0')
-	{
-		p = (s + i);
-	}
+	if (c == '\0')
+		p = (s + i + i);
 	return (p);
 }
