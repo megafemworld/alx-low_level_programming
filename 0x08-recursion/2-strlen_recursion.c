@@ -18,3 +18,4 @@ int _strlen_recursion(char *s)
 		_strlen_recursion(s + 1);
 		i = i + 1;
 	}
+}
