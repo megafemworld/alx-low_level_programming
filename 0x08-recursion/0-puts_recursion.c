@@ -13,6 +13,6 @@ void _puts_recusion(char *s)
 	{
 		return;
 	}
-	_putchar(s);
+	_putchar(*s);
 	_puts_recursion(s + 1);
 }
