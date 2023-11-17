@@ -2,7 +2,7 @@
 /**
   * is_prime_number - check if a given number is prime.
   * @n: number to check
-  * 
+  *
   * Return: 1 if prime number.
   */
 
