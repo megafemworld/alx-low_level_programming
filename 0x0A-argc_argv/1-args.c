@@ -8,12 +8,15 @@
 
 int main(int argc, char *argv[] )
 {
-	if (argv[] < 0)
-		return (0);
-	int i = 0;
+	int i, j = 0;
 
-	i = argc - 1;
-	_putchar(i +'0');
+	if (argc < 1)
+		return (0);
+	for (i = 1; *argv[i] != '\0'; i++)
+	{
+		j = j + 1;
+	}
+	_putchar(j +'0');
 	_putchar('\n');
 	return (0);
 }
