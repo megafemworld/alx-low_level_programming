@@ -8,7 +8,8 @@
 
 int main(int argc)
 {
-	int i;
+	int i = 0;
+
 	i = argc - 1;
 	_putchar(i +'0');
 	_putchar('\n');
