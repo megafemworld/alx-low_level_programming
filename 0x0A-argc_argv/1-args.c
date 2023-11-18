@@ -6,8 +6,10 @@
   * Return : number counted
   */
 
-int main(int argc)
+int main(int argc, char *argv[] )
 {
+	if (argv[] < 0)
+		return (0);
 	int i = 0;
 
 	i = argc - 1;
