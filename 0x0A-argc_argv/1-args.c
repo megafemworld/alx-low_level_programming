@@ -11,4 +11,6 @@ int main(int argc)
 	int i;
 	i = argc - 1;
 	_putchar('i');
+	_putchar('\n');
+	return (0);
 }
