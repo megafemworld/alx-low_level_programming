@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-  * main - print number of arguments
+  * main - print the total number of argumnet given to the programme
   * @argc : argument counter
   * @argv : argument vector
   * Return : number counted
