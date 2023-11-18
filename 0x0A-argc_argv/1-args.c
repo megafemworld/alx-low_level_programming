@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
 	int i;
 
-	if (argv[0][0] == '\0')
+	if (argv[1][0] == '\0')
 		return (0);
 	i = argc - 1;
 	_putchar(i + '0');
