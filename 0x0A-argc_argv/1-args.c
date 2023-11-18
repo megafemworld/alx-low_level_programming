@@ -10,7 +10,7 @@ int main(int argc)
 {
 	int i;
 	i = argc - 1;
-	_putchar('i');
+	_putchar(i +'0');
 	_putchar('\n');
 	return (0);
 }
