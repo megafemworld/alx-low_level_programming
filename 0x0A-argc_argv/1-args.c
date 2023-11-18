@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-  * main - print the total number of argumnet given to the programme
-  * @argc : argument counter
-  * @argv : argument vector
-  * Return : number counted
+  * main - print total number of argument passed excl the programme name
+  * @argc: argument counter
+  * @argv: argument vector/array
+  * Return: number counted
   */
 
 int main(int argc, char *argv[])
