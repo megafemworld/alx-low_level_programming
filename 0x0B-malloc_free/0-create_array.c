@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stddef.h>
+#include <stdlib.h>
 
 /**
   * create_array - create an array of char
@@ -19,6 +20,5 @@ char *create_array(unsigned int size, char c)
 	if (t == NULL)
 		return (NULL);
 	t[0] = c;
-	free(t);
 	return (*t);
 }
