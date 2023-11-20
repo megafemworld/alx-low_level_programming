@@ -20,5 +20,5 @@ char *create_array(unsigned int size, char c)
 	if (t == NULL)
 		return (NULL);
 	t[0] = c;
-	return (*t);
+	return (t);
 }
