@@ -18,5 +18,6 @@ char *create_array(unsigned int size, char c)
 	if (t == NULL)
 		return (NULL);
 	t[] = c;
+	free(t);
 	return (*t);
 }
