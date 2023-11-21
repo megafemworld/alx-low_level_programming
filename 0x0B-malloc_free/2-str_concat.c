@@ -16,6 +16,10 @@
     int tlen, len1, len2, i = 0, j;
     int k = 0;
 
+    if (s1 == 0)
+	    s1 = "";
+    if (s2 == 0)
+	    s2 = "";
     len1 = strlen(s1);
     len2 = strlen(s2);
     tlen = len1 + len2 + 1;
@@ -24,7 +28,7 @@
         return (NULL);
     while (s1[i] != '\0')
     {
-	    if (s1[i] == NULL)
+	    if (*s1 == NULL)
 		    t[i] = "";
 	    else
 		    t[i] = s1[i];
@@ -32,6 +36,7 @@
     }
     for (j = i; j <= len2; j++)
     {
+	    if (*s2 == NULL)
 	    t[i] = s2[k];
 	    k++;
     }
