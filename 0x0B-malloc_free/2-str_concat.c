@@ -36,5 +36,5 @@
         t[j] = s2[k];
         k++;
     }
-    return (t)
+    return (t);
  }
