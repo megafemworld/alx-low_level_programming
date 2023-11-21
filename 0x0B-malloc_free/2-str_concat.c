@@ -17,9 +17,9 @@
     int k = 0;
 
     if (s1 == NULL)
-        s1 = '';
+        s1 = "";
     else if (s2 == NULL)
-        s2 = '';
+        s2 = "";
     len1 = strlen(s1);
     len2 = strlen(s2);
     tlen = len1 + len2 + 1;
