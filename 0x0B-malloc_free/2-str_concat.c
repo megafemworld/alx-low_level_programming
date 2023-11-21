@@ -17,9 +17,9 @@
     int k = 0;
 
     if (s1 == NULL)
-        s1 = "";
+        s1 = '';
     else if (s2 == NULL)
-        s2 = "";
+        s2 = '';
     len1 = strlen(s1);
     len2 = strlen(s2);
     tlen = len1 + len2 + 1;
@@ -29,8 +29,9 @@
     for (i = 0; i < len1; i++)
     {
         t[i] = s1[i];
+        n++;
     }
-    n = i + 1;
+    n = n + 1;
     for (j = n; j <= len2; j++)
     {
         t[j] = s2[k];
