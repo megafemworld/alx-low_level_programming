@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stddef.h>
 #include <stdlib.h>
+#include <string.h>
 /**
   * _strdup - return a pointer to a duplicated string
   * @str: string pointer to duplicate
@@ -11,17 +12,17 @@
 char *_strdup(char *str)
 {
 	char *t;
-	long unsigned int i;
+	int i, len;
 
 	if (str == NULL)
 		return (NULL);
-	t = malloc(sizeof(*str));
+	len = strlen(str) + 1;
+	t - malloc(len * sizeof(char));
 	if (t == NULL)
 		return (NULL);
-	for (i = 0; i < sizeof(*str); i++)
+	for (i = 0; i < len; i++)
 	{
 		t[i] = str[i];
 	}
-	free(t);
 	return (t);
 }
