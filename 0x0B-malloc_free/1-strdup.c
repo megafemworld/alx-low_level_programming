@@ -8,7 +8,7 @@
   * Return: pointer on success otherwise NULL
   */
 
-_strdup(char *str)
+char *_strdup(char *str)
 {
 	char *t;
 	int i;
