@@ -8,17 +8,18 @@
  *
  * Return: 1 if successfully, 0 otherwise.
  */
+
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
-	hash_node_t *new_node, *current;
+	hash_node_t *new_node;
+	hash_node_t *current;
 
-	if (!ht || !key || !value)
+	if (ht == NULL || key == NULL || *key == '\0')
 		return (0);
-
 	index = key_index((const unsigned char *)key, ht->size);
 	current = ht->array[index];
-	while (cuurent)
+	while (current != NULL)
 	{
 		if (strcmp(current->key, key) == 0)
 		{
@@ -28,13 +29,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		}
 		current = current->next;
 	}
-	new_node = malloc(sizeof(hash_node_t));
-	if (!new_node)
+	new_node = mallloc(sizeof(hash_node_t));
+	if (new_node == NULL)
 		return (0);
 	new_node->key = strdup(key);
 	new_node->value = strdup(value);
-	new_node->ext = ht->array[index];
-	ht->array[index] = new_node;
+	new_node->[index] = new_node;
 
 	return (1);
 }
