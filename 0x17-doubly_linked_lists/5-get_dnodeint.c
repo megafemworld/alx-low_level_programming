@@ -19,8 +19,10 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	{
 		if (index == tracker)
 			return (temp);
+		if (index < tracker)
+			break;
 		temp = temp->next;
 		tracker++;
 	}
-	return temp;
+	return (temp);
 }
